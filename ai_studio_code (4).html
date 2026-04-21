@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="cfg-title">Divinity Total Skin Care | Best Dermatologist in Jaipur</title>
+    <script src="config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(12, 74, 110, 0.8), rgba(12, 74, 110, 0.6)),
+                url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .color-primary {
+            color: #0c4a6e;
+        }
+
+        .bg-primary {
+            background-color: #0c4a6e;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.3s ease;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 2000px;
+            padding-bottom: 2rem;
+        }
+
+        .accordion-item.active .chevron-icon {
+            transform: rotate(180deg);
+        }
+
+        .chevron-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .sub-service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo sizing */
+        .site-logo {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Top Info Bar -->
+    <div class="bg-primary text-white text-sm py-2 px-6 flex justify-between items-center hidden md:flex">
+        <div><i class="fas fa-map-marker-alt mr-2 text-sky-400"></i> <span id="cfg-address-short">Mansarovar,
+                Jaipur</span></div>
+        <div class="flex space-x-6">
+            <span><i class="fas fa-phone-alt mr-2 text-sky-400"></i> Call: <span id="cfg-phone">+91-XXXXX
+                    XXXXX</span></span>
+            <span><i class="fas fa-star mr-2 text-yellow-400"></i> <span id="cfg-rating-text">4.5 Rating (648+ Patient
+                    Stories)</span></span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <!-- LOGO ADDED HERE -->
+            <a href="#home" class="flex items-center">
+                <img id="cfg-logo-nav" src="logo.png" alt="Divinity Total Skin Care" class="site-logo">
+            </a>
+
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-sky-600 transition">Home</a>
+                <a href="#about" class="hover:text-sky-600 transition">About</a>
+                <a href="#services" class="hover:text-sky-600 transition">Treatments</a>
+                <a href="#doctors" class="hover:text-sky-600 transition">Doctors</a>
+                <a href="#contact"
+                    class="bg-sky-600 text-white px-6 py-2 rounded-full hover:bg-sky-700 transition shadow-md">Book
+                    Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient h-[600px] flex items-center text-white px-6">
+        <div class="container mx-auto">
+            <div class="max-w-3xl">
+                <div
+                    class="bg-sky-500/20 text-sky-200 border border-sky-500/30 px-4 py-1 inline-block rounded-full mb-6 italic text-sm font-semibold tracking-wide">
+                    ✨ 22+ Years of Clinical Excellence in Jaipur
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight uppercase tracking-tight">Your Skin, Our
+                    <span class="text-sky-400">Expertise.</span></h1>
+                <p class="text-xl mb-10 text-gray-200 leading-relaxed">Jaipur's leading clinic for Dermatology, Laser
+                    Procedures, and Hair Transplants led by renowned specialists.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#services"
+                        class="bg-sky-600 hover:bg-sky-500 text-white px-8 py-4 rounded-lg font-bold transition shadow-xl">Explore
+                        Treatments</a>
+                    <a href="#contact"
+                        class="bg-white text-sky-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold transition shadow-xl">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h3 id="cfg-business-name-1" class="text-4xl font-bold color-primary mb-6">Divinity Total Skin Care</h3>
+                <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                    A trusted dermatology and cosmetology clinic in Jaipur, known for delivering advanced skin, hair,
+                    and aesthetic treatments. Equipped with modern technology, we provide personalized care for a wide
+                    range of concerns.
+                </p>
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <div class="border-l-4 border-sky-500 pl-4">
+                        <h4 id="cfg-exp-years" class="text-2xl font-bold color-primary">22+ Years</h4>
+                        <p class="text-gray-500 text-sm">Experience</p>
+                    </div>
+                    <div class="border-l-4 border-sky-500 pl-4">
+                        <h4 id="cfg-total-patients" class="text-2xl font-bold color-primary">648+</h4>
+                        <p class="text-gray-500 text-sm">Patient Stories</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
+                <h3 class="text-xl font-bold color-primary mb-6 flex items-center">
+                    <i class="fas fa-clock mr-3 text-sky-600"></i> Clinic Timings (Mon - Sun)
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center pb-3 border-b">
+                        <span class="text-gray-700">Morning Session</span>
+                        <span id="cfg-timing-morning" class="font-bold text-sky-700">09:00 AM – 02:00 PM</span>
+                    </div>
+                    <div class="flex justify-between items-center pb-3">
+                        <span class="text-gray-700">Evening Session</span>
+                        <span id="cfg-timing-evening" class="font-bold text-sky-700">05:00 PM – 08:00 PM</span>
+                    </div>
+                </div>
+                <div class="mt-8 p-4 bg-sky-50 rounded-xl text-center">
+                    <p id="cfg-address-location" class="text-sm text-sky-800 italic">📍 21/280, Kaveri Path, Madhyam
+                        Marg, Mansarovar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold color-primary mb-4">Our Specialized Treatments</h2>
+                <p class="text-gray-500">Select a category to explore our advanced medical and aesthetic procedures</p>
+            </div>
+
+            <div class="max-w-5xl mx-auto space-y-4">
+
+                <!-- Category 1: Skin -->
+                <div class="accordion-item bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button class="w-full px-8 py-6 flex justify-between items-center hover:bg-gray-50 transition"
+                        onclick="toggleAccordion(this)">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-spa text-xl"></i>
+                            </div>
+                            <span class="text-xl font-bold color-primary">Skin Treatments</span>
+                        </div>
+                        <i class="fas fa-chevron-down chevron-icon text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content px-8">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Acne & Pimples</h4>
+                                <p class="text-sm text-gray-600 mb-4">Treats active acne, reduces inflammation, and
+                                    prevents future breakouts.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Scar & Pigmentation</h4>
+                                <p class="text-sm text-gray-600 mb-4">Improves skin texture and reduces dark spots and
+                                    uneven tone.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Chemical Peels</h4>
+                                <p class="text-sm text-gray-600 mb-4">Removes dead skin layers to reveal smoother and
+                                    brighter skin.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Anti-Aging</h4>
+                                <p class="text-sm text-gray-600 mb-4">Reduces fine lines, wrinkles, and improves skin
+                                    elasticity.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Photofacial</h4>
+                                <p class="text-sm text-gray-600 mb-4">Enhances skin glow, reduces tanning, and improves
+                                    complexion.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Laser -->
+                <div class="accordion-item bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button class="w-full px-8 py-6 flex justify-between items-center hover:bg-gray-50 transition"
+                        onclick="toggleAccordion(this)">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-bolt text-xl"></i>
+                            </div>
+                            <span class="text-xl font-bold color-primary">Laser & Advanced</span>
+                        </div>
+                        <i class="fas fa-chevron-down chevron-icon text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content px-8">
+                        <div class="grid md:grid-cols-2 gap-6 pt-4">
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Laser Hair Removal</h4>
+                                <p class="text-sm text-gray-600 mb-4">Permanent reduction of unwanted hair using
+                                    advanced laser technology.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">CO2 Laser Resurfacing</h4>
+                                <p class="text-sm text-gray-600 mb-4">Improves scars and skin texture by stimulating
+                                    collagen.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Tattoo Removal</h4>
+                                <p class="text-sm text-gray-600 mb-4">Safely removes unwanted tattoos with minimal
+                                    scarring.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Wart & Mole Removal</h4>
+                                <p class="text-sm text-gray-600 mb-4">Quick and effective clinical removal of skin
+                                    growths.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: Hair -->
+                <div class="accordion-item bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button class="w-full px-8 py-6 flex justify-between items-center hover:bg-gray-50 transition"
+                        onclick="toggleAccordion(this)">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user-md text-xl"></i>
+                            </div>
+                            <span class="text-xl font-bold color-primary">Hair & Scalp</span>
+                        </div>
+                        <i class="fas fa-chevron-down chevron-icon text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content px-8">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Hair Transplant</h4>
+                                <p class="text-sm text-gray-600 mb-4">Restores hair growth in bald or thinning areas
+                                    using FUE.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Scalp Reduction</h4>
+                                <p class="text-sm text-gray-600 mb-4">Surgical technique to reduce bald scalp area.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Hair Loss Treatment</h4>
+                                <p class="text-sm text-gray-600 mb-4">Non-surgical solutions to control hair fall and
+                                    improve density.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4: Specialized -->
+                <div class="accordion-item bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button class="w-full px-8 py-6 flex justify-between items-center hover:bg-gray-50 transition"
+                        onclick="toggleAccordion(this)">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-microscope text-xl"></i>
+                            </div>
+                            <span class="text-xl font-bold color-primary">Specialized Treatments</span>
+                        </div>
+                        <i class="fas fa-chevron-down chevron-icon text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content px-8">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Vitiligo Treatment</h4>
+                                <p class="text-sm text-gray-600 mb-4">Advanced treatments to restore skin pigmentation.
+                                </p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Dermatosurgery</h4>
+                                <p class="text-sm text-gray-600 mb-4">Minor surgical procedures for specific skin
+                                    conditions.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                            <div class="sub-service-card p-6 rounded-xl border border-gray-100 bg-gray-50 transition">
+                                <h4 class="font-bold text-sky-700 mb-2">Botox & Aesthetics</h4>
+                                <p class="text-sm text-gray-600 mb-4">Cosmetic treatments to reduce wrinkles and enhance
+                                    appearance.</p>
+                                <button
+                                    class="text-xs font-bold text-sky-600 uppercase tracking-wider hover:underline">Learn
+                                    More →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="py-24 container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center color-primary mb-16">Meet Our Specialists</h2>
+        <div id="cfg-doctors-container" class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <!-- Doctors will remain here if JS is disabled but get overwritten by config.js -->
+            <!-- Dr. Prateek -->
+            <div
+                class="flex flex-col md:flex-row bg-white rounded-3xl shadow-lg overflow-hidden border hover:border-sky-200 transition">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80"
+                    alt="Dr. Prateek" class="w-full md:w-48 object-cover h-64 md:h-auto">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold color-primary">Dr. Prateek Manjul</h3>
+                    <p class="text-sky-600 font-medium mb-4">Dermatologist & Trichologist</p>
+                    <p class="text-sm text-gray-500 mb-4 italic">22+ Years Experience | Fee: ₹500</p>
+                    <div class="bg-sky-50 p-4 rounded-xl text-sm text-sky-800">
+                        <strong>Availability:</strong> Mon, Wed–Sat<br>11:00 AM – 02:00 PM
+                    </div>
+                </div>
+            </div>
+            <!-- Dr. Vinisha -->
+            <div
+                class="flex flex-col md:flex-row bg-white rounded-3xl shadow-lg overflow-hidden border hover:border-sky-200 transition">
+                <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400&q=80"
+                    alt="Dr. Vinisha" class="w-full md:w-48 object-cover h-64 md:h-auto">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold color-primary">Dr. Vinisha Baliyan</h3>
+                    <p class="text-sky-600 font-medium mb-4">Aesthetic Dermatosurgeon</p>
+                    <p class="text-sm text-gray-500 mb-4 italic">23+ Years Experience | Fee: ₹500</p>
+                    <div class="bg-sky-50 p-4 rounded-xl text-sm text-sky-800">
+                        <strong>Availability:</strong> Mon–Sat<br>11:00 AM – 01:30 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-primary text-white pt-16 pb-10 px-6">
+        <div class="container mx-auto grid md:grid-cols-3 gap-16 border-b border-sky-900 pb-16">
+            <div>
+                <!-- LOGO IN FOOTER -->
+                <img id="cfg-logo-footer" src="logo.png" alt="Divinity Total Skin Care"
+                    class="site-logo mb-6">
+                <p id="cfg-address-full" class="text-sky-200 mb-6 leading-relaxed">
+                    21/280, Kaveri Path, Madhyam Marg,<br>
+                    Mansarovar, Jaipur, Rajasthan
+                </p>
+                <div class="flex space-x-4">
+                    <a id="cfg-social-fb" href="#" target="_blank"
+                        class="w-10 h-10 bg-sky-800 rounded-full flex items-center justify-center hover:bg-sky-600 transition"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a id="cfg-social-ig" href="#" target="_blank"
+                        class="w-10 h-10 bg-sky-800 rounded-full flex items-center justify-center hover:bg-sky-600 transition"><i
+                            class="fab fa-instagram"></i></a>
+                    <a id="cfg-social-wa" href="#" target="_blank"
+                        class="w-10 h-10 bg-sky-800 rounded-full flex items-center justify-center hover:bg-sky-600 transition"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 uppercase">Quick Access</h4>
+                <ul class="space-y-3 text-sky-300 text-sm">
+                    <li><a href="#services" class="hover:text-white transition underline underline-offset-4">Skin
+                            Rejuvenation</a></li>
+                    <li><a href="#services" class="hover:text-white transition underline underline-offset-4">Hair
+                            Transplant</a></li>
+                    <li><a href="#services" class="hover:text-white transition underline underline-offset-4">Laser Hair
+                            Removal</a></li>
+                    <li><a href="#doctors" class="hover:text-white transition underline underline-offset-4">Our
+                            Specialists</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 uppercase">Book Callback</h4>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Full Name"
+                        class="w-full bg-sky-900/50 border border-sky-700 p-3 rounded text-white focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    <input type="tel" placeholder="Mobile Number"
+                        class="w-full bg-sky-900/50 border border-sky-700 p-3 rounded text-white focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    <button class="w-full bg-sky-500 hover:bg-sky-400 py-3 rounded font-bold transition">Submit
+                        Request</button>
+                </form>
+            </div>
+        </div>
+        <p class="text-center mt-10 text-sky-500 text-xs tracking-widest uppercase">&copy; <span
+                id="cfg-copyright-year">2024</span> <span id="cfg-business-name-2">Divinity Total Skin Care</span>
+            Jaipur. All Rights Reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a id="cfg-whatsapp-btn" href="https://wa.me/YOUR_NUMBER"
+        class="fixed bottom-8 right-8 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function toggleAccordion(element) {
+            const currentItem = element.parentElement;
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            accordionItems.forEach(item => {
+                if (item !== currentItem) item.classList.remove('active');
+            });
+            currentItem.classList.toggle('active');
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const firstItem = document.querySelector('.accordion-item');
+            if (firstItem) firstItem.classList.add('active');
+
+            // Configuration Script for customizability
+            if (typeof clinicConfig !== 'undefined') {
+                document.title = `${clinicConfig.businessName} | ${clinicConfig.tagline}`;
+
+                const safeSetText = (id, text) => { const el = document.getElementById(id); if (el) el.innerText = text; };
+                const safeSetHTML = (id, html) => { const el = document.getElementById(id); if (el) el.innerHTML = html; };
+
+                safeSetText('cfg-address-short', clinicConfig.addressShort);
+                safeSetText('cfg-phone', clinicConfig.phoneDisplay);
+                safeSetText('cfg-rating-text', clinicConfig.ratingText);
+
+                const navLogo = document.getElementById('cfg-logo-nav');
+                if (navLogo) { navLogo.src = clinicConfig.logoSrc; navLogo.alt = clinicConfig.businessName; }
+
+                const footerLogo = document.getElementById('cfg-logo-footer');
+                if (footerLogo) { footerLogo.src = clinicConfig.footerLogoSrc || clinicConfig.logoSrc; footerLogo.alt = clinicConfig.businessName; }
+
+                if (clinicConfig.socialLinks) {
+                    const fbLink = document.getElementById('cfg-social-fb');
+                    if (fbLink) fbLink.href = clinicConfig.socialLinks.facebook;
+                    const igLink = document.getElementById('cfg-social-ig');
+                    if (igLink) igLink.href = clinicConfig.socialLinks.instagram;
+                    const waLink = document.getElementById('cfg-social-wa');
+                    if (waLink) waLink.href = clinicConfig.socialLinks.whatsapp;
+                }
+
+                safeSetText('cfg-business-name-1', clinicConfig.businessName);
+                safeSetText('cfg-exp-years', clinicConfig.experienceYears);
+                safeSetText('cfg-total-patients', clinicConfig.totalPatients);
+
+                safeSetText('cfg-timing-morning', clinicConfig.timings.morning);
+                safeSetText('cfg-timing-evening', clinicConfig.timings.evening);
+                safeSetHTML('cfg-address-location', clinicConfig.addressLocationHTML);
+                safeSetHTML('cfg-address-full', clinicConfig.addressFullHTML);
+
+                safeSetText('cfg-copyright-year', clinicConfig.copyrightYear);
+                safeSetText('cfg-business-name-2', clinicConfig.businessName);
+
+                const waBtn = document.getElementById('cfg-whatsapp-btn');
+                if (waBtn) waBtn.href = `https://wa.me/${clinicConfig.whatsappNumber}`;
+
+                // Populate doctors dynamically
+                const doctorsContainer = document.getElementById('cfg-doctors-container');
+                if (doctorsContainer && clinicConfig.doctors && clinicConfig.doctors.length > 0) {
+                    doctorsContainer.innerHTML = ''; // clear static ones
+                    clinicConfig.doctors.forEach(doc => {
+                        const docHTML = `
+                            <div class="flex flex-col md:flex-row bg-white rounded-3xl shadow-lg overflow-hidden border hover:border-sky-200 transition">
+                                <img src="${doc.image}" alt="${doc.name}" class="w-full md:w-48 object-cover h-64 md:h-auto">
+                                <div class="p-8 w-full">
+                                    <h3 class="text-2xl font-bold color-primary">${doc.name}</h3>
+                                    <p class="text-sky-600 font-medium mb-4">${doc.specialty}</p>
+                                    <p class="text-sm text-gray-500 mb-4 italic">${doc.experienceText}</p>
+                                    <div class="bg-sky-50 p-4 rounded-xl text-sm text-sky-800">
+                                        ${doc.availabilityHTML}
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        doctorsContainer.innerHTML += docHTML;
+                    });
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
